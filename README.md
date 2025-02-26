@@ -32,14 +32,15 @@ Se filtrarán los productos en función de la cadena de texto, comparando el nom
 El filtrado se hará en tiempo real, a medida que el usuario introduzca la cadena de texto. ✅
 Elemento del listado
 Cada producto mostrará la siguiente información:
-
 Imagen
 Nombre
 Nombre científico
 Precio
-Imagen del producto
+
+Imagen del producto:
 Mostrará la imagen del producto.
-Descripción del producto
+
+Descripción del producto:
 Mostrará detalles del producto:
 Nombre
 Nombre científico
