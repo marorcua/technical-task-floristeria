@@ -25,7 +25,12 @@ export const ProductDetail = () => {
   if (isLoading) return <Spinner />
 
   return !product ? (
-    <div>Product not found</div>
+    <div
+      className=' bg-gray-700 text-white shadow-lg 
+    rounded-2xl overflow-hidden mt-10 p-6 m-4'
+    >
+      <h2>Product not found</h2>
+    </div>
   ) : (
     <section
       className=' bg-gray-700 text-white shadow-lg 
