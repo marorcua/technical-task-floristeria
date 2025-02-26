@@ -39,7 +39,7 @@ function Home() {
   )
 
   return (
-    <main className='bg-gray-700 mt-4 p-12 flex flex-wrap flex-row justify-end m-4'>
+    <main className='bg-gray-700 mt-10 p-12 flex flex-wrap flex-row justify-end m-4 rounded-2xl'>
       <div>
         <Search handleSearch={setFilterProduct} />
       </div>

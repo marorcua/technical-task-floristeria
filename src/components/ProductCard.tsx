@@ -5,7 +5,7 @@ import { Product } from '../types'
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
-    <div className=' shadow-lg rounded-2xl p-4 flex flex-col items-center text-center bg-white'>
+    <section className=' shadow-lg rounded-2xl p-4 flex flex-col items-center text-center bg-white'>
       <img
         src={product.imgUrl}
         alt={product.name}
@@ -21,7 +21,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
         Fertilizante: {product.fertilizerType}
       </p>
       <p className='text-sm text-gray-700'>Altura: {product.heightInCm} cm</p>
-    </div>
+    </section>
   )
 }
 

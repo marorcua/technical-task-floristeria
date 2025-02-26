@@ -22,14 +22,14 @@ Detalle de producto
 En esta página se visualizarán los detalles de un producto.
 Permitirá volver atrás en la navegación.
 
-Componentes
-Cabecera
-Mostrará el nombre de la empresa y/o un icono, que será un enlace a la home.
-Mostrará breadcrumbs con links para la navegación.
-Buscador
-Permitirá la introducción de una cadena de texto.
-Se filtrarán los productos en función de la cadena de texto, comparando el nombre y el nombre científico de la planta.
-El filtrado se hará en tiempo real, a medida que el usuario introduzca la cadena de texto.
+Componentes ✅
+Cabecera ✅
+Mostrará el nombre de la empresa y/o un icono, que será un enlace a la home. ✅
+Mostrará breadcrumbs con links para la navegación. ✅
+Buscador ✅
+Permitirá la introducción de una cadena de texto. ✅
+Se filtrarán los productos en función de la cadena de texto, comparando el nombre y el nombre científico de la planta. ✅
+El filtrado se hará en tiempo real, a medida que el usuario introduzca la cadena de texto. ✅
 Elemento del listado
 Cada producto mostrará la siguiente información:
 
