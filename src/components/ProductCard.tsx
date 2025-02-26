@@ -5,7 +5,7 @@ import { Product } from '../types'
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
-    <div className='bg-white shadow-lg rounded-2xl p-4 flex flex-col items-center text-center'>
+    <div className=' shadow-lg rounded-2xl p-4 flex flex-col items-center text-center bg-white'>
       <img
         src={product.imgUrl}
         alt={product.name}

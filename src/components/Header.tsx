@@ -1,20 +1,24 @@
 /** @format */
 
-import React from 'react'
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router'
+import Breadcrumbs from './BreadCrumbs'
 
 function Header() {
+  const location = useLocation()
+  console.log({ location })
+
   return (
-    <div className='flex justify-between flex-wrap py-5 bg-black/90'>
-      Header
-      <Link to={'/'}>
+    <div className='flex justify-between flex-wrap py-5 px-10 bg-slate-800 mx-4'>
+      <Breadcrumbs />
+      <Link to={'/'} className='flex'>
+        Floristeria Dulces Pétalos
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
           viewBox='0 0 24 24'
           strokeWidth={1.5}
           stroke='currentColor'
-          className='size-6'
+          className='size-6 mx-5'
         >
           <path
             strokeLinecap='round'
