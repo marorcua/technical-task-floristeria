@@ -3,19 +3,29 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router'
 import { Product } from '../types'
-import { getDeatil } from '../services/data'
+import { getDetail } from '../services/data'
+import Spinner from '../components/Spinner'
 
 export const ProductDetail = () => {
   const { id } = useParams<{ id: string }>()
   const [product, setProduct] = useState<Product | undefined>(undefined)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     if (!id) return
-    getDeatil({ id }).then((product) => setProduct(product))
+    setIsLoading(true)
+    getDetail({ id })
+      .then((product) => {
+        setProduct(product)
+      })
+      .catch((e) => console.log(e))
+      .finally(() => setIsLoading(false))
   }, [])
 
+  if (isLoading) return <Spinner />
+
   return !product ? (
-    <div>Loading</div>
+    <div>Product not found</div>
   ) : (
     <section
       className=' bg-gray-700 text-white shadow-lg 

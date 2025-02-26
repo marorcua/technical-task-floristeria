@@ -5,6 +5,7 @@ function Spinner() {
     <div
       id='spinner'
       className='grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible'
+      data-testid='spinner'
     >
       <svg
         className='text-gray-300 animate-spin'

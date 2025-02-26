@@ -30,24 +30,24 @@ Buscador ✅
 Permitirá la introducción de una cadena de texto. ✅
 Se filtrarán los productos en función de la cadena de texto, comparando el nombre y el nombre científico de la planta. ✅
 El filtrado se hará en tiempo real, a medida que el usuario introduzca la cadena de texto. ✅
-Elemento del listado
+Elemento del listado ✅
 Cada producto mostrará la siguiente información:
 Imagen
 Nombre
 Nombre científico
 Precio
 
-Imagen del producto:
+Imagen del producto: ✅
 Mostrará la imagen del producto.
 
-Descripción del producto:
+Descripción del producto: ✅
 Mostrará detalles del producto:
-Nombre
-Nombre científico
-Precio
-Riegos por semana
-Fertilizante recomendado: Podrá ser "fosforado" o "nitrogenado".
-Altura
+Nombre ✅
+Nombre científico ✅
+Precio ✅
+Riegos por semana ✅
+Fertilizante recomendado: Podrá ser "fosforado" o "nitrogenado". ✅
+Altura ✅
 
 Definición de API
 El dominio al que hay que apuntar es:

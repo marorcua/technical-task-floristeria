@@ -15,9 +15,11 @@ export async function getProducts(): Promise<Product[]> {
   }
 }
 
-export async function getDeatil({ id }: { id: string }) {
+export async function getDetail({ id }: { id: string }) {
   try {
     const response = await fetch(`${API_URL}/api/v1/product/${id}`)
+    if (!response.ok) return undefined
+
     const data: Product = await response.json()
     return data
   } catch (error) {

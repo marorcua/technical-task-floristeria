@@ -8,6 +8,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
     <section
       className=' shadow-lg rounded-2xl p-4 flex flex-col items-center text-center bg-white 
     transition duration-500 ease-in-out grayscale hover:scale-105 hover:grayscale-0'
+      data-testid='product-card'
     >
       <img
         src={product.imgUrl}
