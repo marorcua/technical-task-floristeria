@@ -29,30 +29,32 @@ rounded-2xl overflow-hidden mt-10 p-6 m-4'
           ⬅ Volver
         </Link>
       </div>
-      <div className='grid columns-2'>
+      <div className='grid grid-cols-2 grid-rows-auto gap-16'>
         <img
-          className='w-4xl h-64 object-contain mt-4 rounded-lg'
+          className='w-4xl object-contain rounded-lg h-120 transition-all delay-150 duration-600 ease-in-out hover:scale-105 '
           src={product.imgUrl}
           alt={product.name}
         />
-        <h2 className='text-2xl font-bold text-white'>
-          {product.name}{' '}
-          <span className='text-gray-400'>({product.binomialName})</span>
-        </h2>
-        <div className='mt-4 space-y-2'>
-          <p className='text-lg'>
-            <strong>💲 Precio:</strong> ${product.price}
-          </p>
-          <p className='text-lg'>
-            <strong>💧 Riegos por semana:</strong> {product.wateringsPerWeek}
-          </p>
-          <p className='text-lg'>
-            <strong>🌱 Fertilizante recomendado:</strong>{' '}
-            {product.fertilizerType}
-          </p>
-          <p className='text-lg'>
-            <strong>📏 Altura:</strong> {product.heightInCm} cm
-          </p>
+        <div>
+          <h2 className='text-2xl font-bold text-white'>
+            {product.name}{' '}
+            <span className='text-gray-400'>({product.binomialName})</span>
+          </h2>
+          <div className='mt-4 space-y-2'>
+            <p className='text-lg'>
+              <strong>💲 Precio:</strong> ${product.price}
+            </p>
+            <p className='text-lg'>
+              <strong>💧 Riegos por semana:</strong> {product.wateringsPerWeek}
+            </p>
+            <p className='text-lg'>
+              <strong>🌱 Fertilizante recomendado:</strong>{' '}
+              {product.fertilizerType}
+            </p>
+            <p className='text-lg'>
+              <strong>📏 Altura:</strong> {product.heightInCm} cm
+            </p>
+          </div>
         </div>
       </div>
     </section>
